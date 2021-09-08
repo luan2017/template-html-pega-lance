@@ -1,0 +1,321 @@
+body {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+}
+
+.divSections {
+    display: flex;
+    flex-direction: row;
+}
+
+.sectionPrimary{
+    background-color: #F8F8FD;
+    width: 65%;
+    height: 630px;
+}
+
+.sectionPrimary header  {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 15%;
+    margin-left: 4%;
+    margin-top: 10px;
+}
+
+
+.sectionPrimary header div img {
+    width: 141px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.sectionPrimary header div#line {
+    border: 1px solid #CECFD9;
+    height: 40px;
+}
+
+
+.sectionPrimary header button  {
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #51545A;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.sectionPrimary div#textCenter  {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-left: 11%;
+    width: 60%;
+    margin-top: 0px;
+}
+
+.sectionPrimary div#textCenter h2 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;    
+    color: #D30000;
+}
+
+.sectionPrimary div#textCenter h1 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #1F1F26;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.sectionPrimary div#textCenter h4 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #1F1F26;
+    margin-top: 0px;
+}
+
+.sectionPrimary div#textCenter div#buttonGreen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 48px;
+
+    width: 45%;
+    margin-top: 20px;
+
+    background: #14C67B;
+    box-shadow: 5px 10px 20px rgba(20, 198, 123, 0.5);
+    border-radius: 100px;
+    color: white;
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sectionPrimary div#textCenter div#alert {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 135%;
+    color: #51545A;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.sectionPrimary div#textCenter div#alert img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.sectionPrimary div#textCenter div#flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.sectionPrimary div#textCenter div#flex div#line {
+    border: 1px solid #CECFD9;
+    height: 50px;
+}
+
+.sectionPrimary div#textCenter div#flex div#icon {
+    margin-right: 15px;
+}
+
+.sectionPrimary div#textCenter div#flex div#icon  img{
+    width: 40px;
+    height: 40px;
+}
+
+.sectionPrimary div#textCenter div#flex h3 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #1E1C1C;
+    margin-bottom: 0px;
+}
+
+.sectionPrimary div#textCenter div#flex label {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #1E1C1C;
+    opacity: 0.8;
+}
+
+.sectionSecondary {
+    background-color: #D30000;
+    width: 35%;
+    height: 630px;
+}
+
+.sectionSecondary header  {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 15%;
+}
+
+.sectionSecondary header button#access{
+    color: white;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-weight: 800;
+}
+
+.sectionSecondary header button#access img{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.sectionSecondary header button#signup{
+    background: #14C67B;
+    box-shadow: 5px 10px 20px -10px rgba(20, 198, 123, 0.16);
+    border-radius: 100px;
+    color: white;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16px;
+
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+}
+
+.sectionSecondary header button#signup img{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+
+.sectionSecondary div#mainSecondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.sectionSecondary div#mainSecondary div#retanglePc {
+    position: absolute;
+    width: 494px;
+    height: 380px;
+    left: 55%;
+    top: 122px;   
+    background: #FFFFFF;
+    border: 4px solid rgba(0, 62, 119, 0.1);
+    box-sizing: border-box;    
+    box-shadow: 4px 8px 80px rgba(40, 40, 103, 0.05);
+    border-radius: 8px;
+}
+
+.sectionSecondary div#mainSecondary div#retanglePhone {
+    position: absolute;
+    width: 160px;
+    height: 320px;
+    left: 80%;
+    top: 246px;
+    background: #FFFFFF;
+    border: 4px solid rgba(0, 62, 119, 0.1);
+    box-sizing: border-box;
+    box-shadow: 4px 8px 80px rgba(40, 40, 103, 0.05);
+    border-radius: 8px;
+}
+
+
+
+/* Medya query */
+
+@media screen and (max-width: 1200px){
+    .divSections {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectionPrimary {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 15px;
+    }
+
+    .sectionPrimary div#textCenter  {
+        width: 80%;
+    }
+
+    .sectionSecondary {
+        width: 100%;
+    }
+
+    .sectionSecondary div#mainSecondary div#retanglePc {
+        position: static;
+    }
+
+    .sectionSecondary div#mainSecondary div#retanglePhone {
+        position: static;
+        z-index: 2;
+        margin-left: -6rem;
+        margin-bottom: -12rem;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .sectionPrimary header  {
+        flex-direction: column;
+    }
+
+    .sectionPrimary header div#line {
+        display: none;
+    }
+
+}
