@@ -55,7 +55,7 @@ body {
 
 .sectionPrimary div#textCenter  {
     display: flex;
-    align-items: end;
+    align-items: flex-start;
     flex-direction: column;
     margin-left: 11%;
     width: 60%;
@@ -274,6 +274,143 @@ body {
 }
 
 
+.divDefault {
+    margin: 115px 212px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divDefault section#sectionDefault {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.divDefault section#sectionDefault  h1{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    color: #1F1F26;
+}
+
+.divDefault section#sectionDefault  label{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 135%;
+    text-align: center;
+    color: #1F1F26;
+}
+
+.divDefault section#sectionDefault div#blocksTitle{
+    display: flex;
+    width: 100%;
+    margin-top: 49px;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.divDefault section#sectionDefault div#blocksTitle div#retalgleGray{
+    background: #FFFFFF;
+    border: 1px solid rgba(81, 84, 90, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 402px;
+    height: 392px;
+    margin-top: 3rem;
+}
+
+.divDefault section#sectionDefault div#blocksTitle div#retalgleGray div#title{
+    color: #51545A;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 135%;
+    text-align: center;
+    background: #f7f7f7;
+    /* opacity: 0.05; */
+}
+
+.divDefault section#sectionDefault div#blocksTitle div#retalgleRed{
+    background: #FFFFFF;
+    border: 1px solid rgba(211, 0, 0, 0.2);
+    box-sizing: border-box;
+    box-shadow: 4px 8px 80px rgba(40, 40, 103, 0.05);
+    border-radius: 8px;
+    width: 402px;
+    height: 392px;
+    margin-left: 24px;
+    margin-top: -2rem;
+}
+
+.divDefault section#sectionDefault div#blocksTitle div#retalgleRed div#title{
+    background: #D30000;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 135%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.listIconText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.listIconText div#flexIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    max-width: 70%;
+}
+
+.listIconText div#flexIcon img{
+    width: 56px;
+    height: 56px;
+    margin-right: 24px;
+}
+
+.listIconText div#flexIcon label, .listIconText div#flexIcon label#red{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;                      
+    text-align: initial;                                             
+}
+
+
+.listIconText div#flexIcon label#red strong{
+    color: #D30000;
+}
+
 
 /* Medya query */
 
@@ -307,6 +444,26 @@ body {
         margin-left: -6rem;
         margin-bottom: -12rem;
     }
+}
+
+@media screen and (max-width: 910px){
+    .divDefault section#sectionDefault div#blocksTitle{
+        display: flex;
+        width: 100%;
+        margin-top: 49px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .divDefault section#sectionDefault div#blocksTitle div#retalgleRed{
+        margin-left: 0px;
+        margin-top: 5%;
+    }
+
+    .divDefault section#sectionDefault div#blocksTitle div#retalgleGray{
+        margin-top: 0px;
+    }
+
 }
 
 @media screen and (max-width: 680px){
