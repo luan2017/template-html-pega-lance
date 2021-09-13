@@ -284,7 +284,7 @@ body {
 .divDefault section#sectionDefault {
     display: flex;
     flex-direction: column;
-    height: 200vh;
+    height: auto;
     align-items: center;
 }
 
@@ -414,9 +414,8 @@ body {
 
 
 .displayDiv {
-    width: 97%;
+    width: 75%;
     height: 104px;
-    margin-left: 2rem;
     background: #FFFFFF;
     border: 1px solid rgba(81, 84, 90, 0.2);
     box-sizing: border-box;
@@ -444,6 +443,7 @@ body {
 
 .displayDiv div#textDisplay {
     width: 100%;
+    height: 104px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -485,6 +485,180 @@ body {
     cursor: pointer;
 }
 
+.cards {
+    width: 100%;
+    display: flex;
+    margin-left: 5%;
+    margin-top: 150px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards div#text {
+    width: 50%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.cards div#text label#title {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #D30000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.cards div#text label#subTitle{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    color: #1F1F26;
+    text-align: start;
+    margin-top: 12px;
+}
+
+.cards div#text label#text{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 135%;
+    text-align: start;
+    color: #1F1F26;
+    margin-top: 12px;
+}
+
+.cards div#card {
+    width: 416px;
+    height: 398px;
+    background: #404047;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.footerBar {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerBar img{
+    width: 150px;
+    height: 42px;
+    margin-right: 10px;
+}
+
+.footerBar label{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: #51545A;
+}
+
+.footerBar div#line{
+    border: 1px solid #EDEDF2;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.sectionRed {
+    width: 100%;
+    height: 583px;
+    background-color: #D30000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sectionRed div#retangle{
+    width: 496px;
+    height: 327px;
+    background-color: #1F1F26;
+    border: 12px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sectionRed div#text{
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionRed div#text label#label1{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.sectionRed div#text label#label2{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+.sectionRed div#text label#label3{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.sectionRed div#text button{
+    background: #14C67B;
+    box-shadow: 5px 10px 20px rgba(20, 198, 123, 0.12);
+    border-radius: 100px;
+    width: 296px;
+    height: 52px;
+    cursor: pointer;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
 
 /* Medya query */
 
@@ -523,10 +697,11 @@ body {
 @media screen and (max-width: 910px){
     .divDefault section#sectionDefault div#blocksTitle{
         display: flex;
-        width: 100%;
+        width: 80%;
         margin-top: 49px;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
     }
 
     .divDefault section#sectionDefault div#blocksTitle div#retalgleRed{
@@ -536,6 +711,15 @@ body {
 
     .divDefault section#sectionDefault div#blocksTitle div#retalgleGray{
         margin-top: 0px;
+    }
+
+    .sectionRed {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .sectionRed div#text {
+        margin-bottom: 20px;
     }
 
 }
@@ -550,6 +734,18 @@ body {
     }
     .displayDiv {
         margin-left: 0;
+    }
+
+    .cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cards div#text {
+        width: 95%;
     }
 
 }
