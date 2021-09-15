@@ -656,7 +656,75 @@ body {
     justify-content: center;
 }
 
+.sectionCheck {
+    margin: 150px 213px;
+    width: fit-content;
+}
 
+.sectionCheck label#title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    color: #1E1C1C;
+}
+
+.sectionCheck div#checks {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sectionCheck div#checks div#checkText {
+    display: flex;
+    flex-direction: column;
+    margin-top: 56px;
+    margin-right: 24px;
+}
+
+.sectionCheck div#checks div#checkText img{
+    width: 18px;
+    height: 18px;
+}
+
+.sectionCheck div#checks div#checkText label{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 18px;
+}
+
+.sectionCheck div#contact {
+    width: 100%;
+    height: 56px;
+    border: 1px solid #E1E5F0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0px;
+    margin-top: 56px;
+}
+
+.sectionCheck div#contact label {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;   
+    text-align: center;    
+    color: #404047;
+}
+
+.sectionCheck div#contact img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
 
 
 
@@ -722,6 +790,11 @@ body {
         margin-bottom: 20px;
     }
 
+    .sectionCheck div#checks {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
 
 @media screen and (max-width: 680px){
@@ -746,6 +819,16 @@ body {
 
     .cards div#text {
         width: 95%;
+    }
+
+    
+    .sectionCheck {
+        margin: 100px 50px;
+    }
+
+    .sectionCheck div#checks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
