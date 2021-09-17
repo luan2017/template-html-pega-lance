@@ -218,6 +218,7 @@ body {
     box-shadow: 5px 10px 20px -10px rgba(20, 198, 123, 0.16);
     border-radius: 100px;
     color: white;
+    border: transparent;
 
     font-family: sans-serif;
     font-style: normal;
@@ -483,6 +484,7 @@ body {
     line-height: 19px;
     text-align: center;
     cursor: pointer;
+    border: transparent;
 }
 
 .cards {
@@ -648,12 +650,10 @@ body {
     line-height: 19px;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     color: #FFFFFF;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: transparent;
 }
 
 .sectionCheck {
@@ -726,6 +726,84 @@ body {
     margin-right: 8px;
 }
 
+.sectionDbout {
+    width: 80%;
+    height: 1451px;
+    background: #F8F8FD;
+    border-radius: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.sectionSignup {
+    width: 100%;
+    height: 690px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.sectionSignup img#one {
+    width: 30%;
+    margin-bottom: 14rem;
+    z-index: 2;
+}
+
+.sectionSignup img#two {
+    width: 30%;
+    margin-top: 12rem;
+}
+
+.sectionSignup div#center{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionSignup div#center label {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #D30000;
+}
+
+.sectionSignup div#center h1 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 100%;
+    text-align: center;
+    color: #1F1F26;
+    margin-top: 16px;
+}
+
+.sectionSignup div#center button {
+    width: 340px;
+    height: 50px;
+    background: #14C67B;
+    box-shadow: 5px 4px 20px rgba(20, 198, 123, 0.5);
+    border-radius: 100px;
+    cursor: pointer;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    border: transparent;
+}
 
 
 /* Medya query */
@@ -829,6 +907,14 @@ body {
     .sectionCheck div#checks {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sectionSignup img#one {
+        display: none;
+    }
+    
+    .sectionSignup img#two {
+       display: none;
     }
 
 }
