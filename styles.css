@@ -1,7 +1,7 @@
 body {
     background-color: white;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0px;
 }
 
@@ -735,6 +735,58 @@ body {
     margin-left: 10%;
 }
 
+.sectionDbout h1 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    color: #1F1F26;
+    padding: 102px 10px 0px 10px;
+
+}
+
+.sectionDbout div#dbouts  {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionDbout div#dbouts div#dbout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 72px;
+
+    background: #FFFFFF;
+    border: 1px solid #E1E5F0;
+    box-sizing: border-box;
+    box-shadow: 4px 8px 80px rgba(40, 40, 103, 0.05);
+    border-radius: 10px;
+    margin-left: 10%;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+
+.sectionDbout div#dbouts div#dbout label{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;    
+    color: #1F1F26;
+    margin-left: 15px;
+}
+
+.sectionDbout div#dbouts div#dbout img{
+   width: 16px;
+   height: 16px;
+   margin-right: 20px;
+}
+
 .sectionSignup {
     width: 100%;
     height: 690px;
@@ -861,7 +913,7 @@ body {
 
     .sectionRed {
         flex-direction: column;
-        padding: 50px;
+        padding: 15px 0px 15px 10px;
     }
 
     .sectionRed div#text {
@@ -888,7 +940,7 @@ body {
     }
 
     .cards {
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -897,6 +949,14 @@ body {
 
     .cards div#text {
         width: 95%;
+    }
+
+    .cards div#card {
+        width: 75%;
+    }
+
+    .sectionRed div#retangle{
+        width: 50%;
     }
 
     
