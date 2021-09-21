@@ -2,7 +2,10 @@ body {
     background-color: white;
     height: 100%;
     margin: 0px;
-    width: 100vw;
+}
+
+.container {
+    width: 100%;
 }
 
 .divSections {
@@ -930,15 +933,18 @@ body {
     .divDefault section#sectionDefault div#blocksTitle div#retalgleRed{
         margin-left: 0px;
         margin-top: 5%;
+        width: 100%;
     }
 
     .divDefault section#sectionDefault div#blocksTitle div#retalgleGray{
         margin-top: 0px;
+        width: 100%;
     }
 
     .sectionRed {
         flex-direction: column;
         padding: 15px 0px 15px 10px;
+        text-align: center;
     }
 
     .sectionRed div#text {
@@ -972,6 +978,10 @@ body {
         align-items: center;
     }
 
+    .sectionPrimary div#textCenter div#buttonGreen{
+        width: 75%;
+    }
+
     .cards div#text {
         width: 95%;
     }
@@ -980,8 +990,16 @@ body {
         width: 75%;
     }
 
+    .sectionRed div#text button{
+        width: 90%;
+    }
+
     .sectionRed div#retangle{
         width: 50%;
+    }
+
+    .sectionRed div#text label#label2 {
+        font-size: 35px;
     }
 
     
@@ -994,12 +1012,37 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .sectionSignup{
+        width: 90%;
+    }
+
+    .sectionDbout div#dbouts div#dbout {
+        height: 100px;
+    }
+
     .sectionSignup img#one {
         display: none;
     }
     
     .sectionSignup img#two {
        display: none;
+    }
+
+    .sectionSignup div#center h1{
+        font-size: 50px;
+    }
+
+    .divDefault section#sectionDefault div#buttonGreen {
+        width: 50%;
+    }
+
+    .footerBar {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .footerBar div#line{
+        display: none;
     }
 
 }
